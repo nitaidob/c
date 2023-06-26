@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    printf("enter number   ");
+scanf("%d"  ,&num1);
+num2=num1*2+3;
+
+printf("mine is %d \n"  ,num2);
+ 
+ 
+printf("you lost   :)  ");
+    return 0;
+}
