@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    printf("enter number   ");
+scanf("%d"  ,&num1);
+num2=num1+2;
+printf("I win you   ");
+printf("%d"  ,num2);
+    return 0;
+}
