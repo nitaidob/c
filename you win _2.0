@@ -1,0 +1,25 @@
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int lowerLimit = 0;   
+    int upperLimit = 300;   
+    int randomNumber;
+    int num1, num2;
+    srand(time(NULL));
+
+      printf("enter number  ");
+      scanf("%d"  ,&num1);
+    randomNumber = (rand() % (upperLimit - lowerLimit +1)) + lowerLimit;
+num2=randomNumber;
+printf("mine is %d \n"  ,num2);
+if(num1>num2) { printf("you win   :)  "); }
+else if(num1==num2) { printf("teko  :)  "); }
+else { printf("you lost"); }
+    return 0;
+}
