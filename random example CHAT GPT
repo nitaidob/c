@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int lowerLimit = 10;   // Límite inferior
+    int upperLimit = 200;   // Límite superior
+    int randomNumber;
+
+    // Inicializa la semilla del generador de números aleatorios
+    srand(time(NULL));
+
+    // Genera un número aleatorio dentro del rango [lowerLimit, upperLimit]
+    randomNumber = (rand() % (upperLimit - lowerLimit + 1)) + lowerLimit;
+
+    printf("my number is: %d\n", randomNumber);
+
+    return 0;
+}
